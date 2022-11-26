@@ -1,13 +1,17 @@
-const avg = arr => {
-    let item = 0;
-    for (let i = 0; i < arr.length; i++) {
-      item += arr[i];
-    }
-  
-    return item / arr.length;
-  }
+function miane(arr) {
+  if(arr.length %2 === 0) 
+  {const index = arr.length / 2 ;
 
- console.log( avg([10 , 20 , 30 , 40 , 50]));
+  return  (arr[index] + arr[index-1]) / 2
+}
+const index = math.floor(arr.length);
+return arr[index]
+}
+
+
+ const result = miane ([1,2,3,4,5,6,7,8,9,10]);
+
+ console.log(result);
 
 
 
