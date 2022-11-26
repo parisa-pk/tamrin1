@@ -12,9 +12,10 @@ for (let i = 0 ; i < arr.length ; i++) {
     if (helloWord === 'node_modules')continue;
     
     const file = fs.readFileSync(helloWord , 'utf-8')
-    if (file.includes(word) && helloWord ==!'practice.mjs') {
+    if (file.includes(word) && helloWord !=='practice.mjs') {
         console.log(helloWord);
+        log(chalk.blue(word))
+
     }
-    log(chalk.blue(word))
 }
 
