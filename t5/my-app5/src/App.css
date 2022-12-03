@@ -1,0 +1,31 @@
+
+.con1{
+    
+    display: grid;
+    margin: 20px;
+    grid-template-rows: 120px auto;
+
+    
+}
+.Con2{
+    border: 2px solid darkgreen;
+    height: 60vh;
+}
+
+.btn{
+margin-top: 100px;
+margin-left: 20px;
+}
+.Nav{
+
+border: 2px solid darkgreen;
+
+}
+
+.Link1{
+    position: absolute;
+    border: 2px double darkgreen;
+    margin-top: 20px;
+    padding: 10px;
+    text-decoration: none;
+}

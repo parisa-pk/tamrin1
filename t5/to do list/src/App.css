@@ -1,0 +1,32 @@
+.navbar{
+    border: 10px double black;
+    text-align: center;
+    height: 70px;
+    padding-top: 20px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-column-gap: 20px;
+}
+
+.sidebar{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    height: 100vh;
+    border: 10px double black;
+}
+.a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+}
+.content{
+    margin-top: 20px;
+    padding-top: 20px;
+    border: 10px double black;
+text-align: center;
+
+}
