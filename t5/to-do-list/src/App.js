@@ -1,3 +1,5 @@
+import'./App.css'
+
 import {useState} from 'react'
 function App() {
 const[tasks, setTask] = useState([]);
@@ -6,20 +8,20 @@ function Add() {
   setTask([...tasks,newTask]);
 }
 function remove(task) {
-  setTask(task.filter((t)=> t !== task))
+  setTask(tasks.filter((t)=> t !== task))
 }
 
 return (
 <div>
    
    <div>
-    <button onClick={Add}>Add</button>
+    <button className='btn' onClick={Add}>Add</button>
    </div>
 
 <ul>
 
   {
-    tasks.map((each)=><li>{each} <button onClick={() => remove(each)} >Remove</button></li>)
+    tasks.map((each)=><li>{each} <button  onClick={() => remove(each)} >Remove</button></li>)
   }
 
 </ul>
