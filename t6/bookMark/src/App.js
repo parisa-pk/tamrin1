@@ -1,7 +1,7 @@
-import {useState} from 'react';
-import {useEffect} from 'react';
 import axios from 'axios';
-import Post from './Post'
+import Post from './Post';
+import {useState , useEffect} from 'react';
+
 
 
 function App() {
@@ -10,13 +10,13 @@ function App() {
   const[post , setPost] = useState([])
 
   useEffect(() => axios.get("https://jsonplaceholder.typicode.com/posts").then((res)=>{
-      setPost(res.data);
-      console.log(res.data);}),[])
+      setPost(res.data)
+      console.log(res.data);}) , [])
 
 
   return (
 <div>
-  {post.map((post)=><Post title={post.title} body={post.body}/>)}
+  {post.map((post)=> <Post title={post.title} body={post.body}/>)}
 </div>    
   );
 }

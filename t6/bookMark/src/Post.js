@@ -8,10 +8,12 @@ function Post({title , body}) {
     function mark() {
         myDiv.current.style.backgroundColor = 'blue'
     }
-    return(<div >
+    return(<div>
+
         <h2>{title}</h2>
         <span>{body}</span>
-        <button ref={myDiv} onClick={mark}>Bookmark</button>
+        <button  onClick={mark} ref={myDiv}>Bookmark</button>
+
         </div>
     )
 }
