@@ -5,17 +5,22 @@ import {useState , useEffect} from 'react';
 
 function App() {
 
-  const[post , setPost] = useState([]);
+  const [ post , setPost ] = useState([]);
+const [Id , setId ] = useState(0)
 
+if (Id === post.id) {
+ 
+}
 
-  useEffect(() => axios.get("https://jsonplaceholder.typicode.com/posts").then((res)=>{
-      setPost(res.data)
-      console.log(res.data);}) , []);
+  useEffect(() =>{ axios.get("https://jsonplaceholder.typicode.com/posts").then((res)=>{
+      setPost(res.data)})}
+     , []);
 
 
   return (
 <div>
-  {post.map((post)=> <Post title={post.title} body={post.body}/>)}
+  
+  {post.map((post)=> <Post title={post.title} body={post.body} id={post.id}/>)}
 </div>    
   );
 }

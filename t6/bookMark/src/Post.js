@@ -1,18 +1,21 @@
-import { useEffect, useRef } from "react";
+import { useEffect , useRef } from "react";
 
-function Post({title , body}) {
+function Post({title ,id , body}) {
     const myDiv = useRef(null);
 
-    useEffect(mark , [])
+    useEffect(mark , []);
     
     function mark() {
+        
         myDiv.current.style.backgroundColor = 'blue'
     }
+   
     return(<div>
 
         <h2>{title}</h2>
+        <span>{id}</span>
         <span>{body}</span>
-        <button  onClick={mark} ref={myDiv}>Bookmark</button>
+        <button ref={myDiv} onClick={mark} >Bookmark</button>
 
         </div>
     )
