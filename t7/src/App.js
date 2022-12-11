@@ -32,7 +32,7 @@ function App() {
 
       <div>
 
-          <input ref={inp => {inp && inp.focus()} } placeholder="Search something..." />
+          <input ref={inp => {inp && inp.focus()} } autoFocus placeholder="Search something..." />
           <button onClick={search} >search</button>
 
       </div>
