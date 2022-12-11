@@ -16,8 +16,7 @@ function App() {
       setPostList(res)
       setIsLoading(false)
     })
-
-  })
+})
 
 
 
